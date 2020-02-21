@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>T-Maxified - The Max Opportunity</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/faicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="loadUsers()">
+    <!-- ##### Preloader ##### -->
+    <div id="preloader">
+        <i class="circle-preloader"></i>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="fitness-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="fitnessNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="#">events</a>
+                                        <ul id="event-dropdown" class="dropdown">
+                                           
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">products</a>
+                        
+                                            <ul class="dropdown">
+                                                <li><a href="cellgevity.html">cellgevity</a></li>
+                                                <li><a href="maxone.html">maxone</a></li>
+                                                <li><a href="maxatp.html">max atp</a></li>
+                                                <li><a href="maxnfuze.html">max nfuze</a></li>
+                                                <li><a href="max357.html">max 357</a></li>
+                                                <li><a href="metaswitch.html">meta switch</a></li>
+                                            </ul>
+                                    </li>
+                                </ul>
+
+                                <!-- Call Button -->
+                                <a class="fitness-btn menu-btn ml-30" href="joinus.html"
+                                    >JOIN US</a>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="buyModalLabel">Users</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="join-form">
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Name:</label>
+                    <input type="text" name="name" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-email" class="col-form-label">Email:</label>
+                    <input type="text" name="email" class="form-control" id="recipient-email">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-phone" class="col-form-label">Phone Number:</label>
+                    <input type="text" name="phone" class="form-control" id="recipient-phone">
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="joinNow()">Register</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Breadcumb Area Start ##### -->
+    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/breadcumb.jpg);">
+        <div class="bradcumbContent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Users</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"></li>
+                                <li class="breadcrumb-item active" aria-current="page">Users</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### About Us Area Start ##### -->
+    <div class="about-us--area section-padding-100">
+        <div class="container">
+            <div class="row">
+
+                <!-- About Text -->
+                <div class="col-12 col-lg-7">
+                    <!-- <div class="section-heading">
+                        <h6>Max International</h6>
+                        <h2>Why Max International?</h2>
+                    </div> -->
+                    <!-- <div class="about-text">
+                        <p>Max International is dedicated to improving everyday lives. We are independent associates of max international with a sole aim of empowering people we come in contact with better health, financial freedom and significance. We are all born to be free. But how can you feel free when bills are piling up and you see no way out? Our team is committed to safe and effective products that supplement glutathione, the body’s master antioxidant and a vital protector against free radicals. This dedication has earned Max a U.S. patent for RiboCeine™ one of the core components to a variety of our products. We invite you to learn more about our Executive Team, who help guide and drive our initiatives. </p>
+                       
+                    </div> -->
+
+                    <div class="col-md-12">
+                            <div class="panel-heading">
+                                
+                            </div>
+                            <table class="table table-hover mytable" id="user-table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+
+                <!-- About Thumbnail -->
+                <div class="col-12 col-lg-5">
+                    <div class="about--thumb">
+                        <img src="img/bg-img/bg-12.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <!-- Live Chat Code :: Start of Tawk.to Script 
+    <script>
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5b55ea72df040c3e9e0bdf85/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    End of Tawk.to Script -->
+</body>
+
+</html>
